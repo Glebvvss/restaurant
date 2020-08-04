@@ -1,0 +1,17 @@
+{
+    "name": "gleb/reserve",
+    "authors": [
+        {
+            "name": "Gleb Vasylenko",
+            "email": "hleb.v@platinumlist.pro"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Restaurant\\": "./src"
+        }
+    }
+}
