@@ -10,7 +10,8 @@ $restaurant = new Restaurant(
     )
 );
 
-$restaurantRequest = new RestaurantRequest($restaurant);
-$restaurantRequest->hall('Main')
-                  ->tableFreeAt('2022-12-12 18:00', '2022-12-12 19:00')
-                  ->reserveAt('2022-12-12 18:00', '2022-12-12 19:00');
+$restaurant = new Restaurant(
+    new HallsMysql(
+        new TablesMysql(
+            new ReservesMysql($dbAdapter), $dbAdapter), $dbAdapter)
+);
