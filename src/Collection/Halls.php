@@ -4,9 +4,11 @@ namespace Restaurant\Collection;
 
 use Restaurant\Entity\Hall;
 use Restaurant\Entity\HallName;
+use Restaurant\Collection\Contract\IHalls;
 use Restaurant\Exception\RestaurantException;
+use Restaurant\Collection\Contract\ICollection;
 
-class Halls
+class Halls implements IHalls, ICollection
 {
     private $data = [];
 
@@ -19,7 +21,7 @@ class Halls
         $this->data[] = $hall;
     }
 
-    public function hallByName(HallName $hallName)
+    public function hallByName(HallName $hallName): Hall
     {
         foreach($this->data as $dataItem) {
             if ($dataItem->name() === $hallName->string()) {

@@ -5,8 +5,10 @@ namespace Restaurant\Collection;
 use Restaurant\Entity\Reserve;
 use Restaurant\Entity\TimeInterval;
 use Restaurant\Exception\RestaurantException;
+use Restaurant\Collection\Contract\IReserves;
+use Restaurant\Collection\Contract\ICollection;
 
-class Reserves
+class Reserves implements IReserves, ICollection
 {
     private $data = [];
 

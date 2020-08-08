@@ -3,9 +3,11 @@
 namespace Restaurant\Collection;
 
 use Restaurant\Entity\Table;
+use Restaurant\Collection\Contract\ITables;
 use Restaurant\Exception\RestaurantException;
+use Restaurant\Collection\Contract\ICollection;
 
-class Tables
+class Tables implements ITables, ICollection
 {
     private $data = [];
 
