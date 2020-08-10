@@ -6,6 +6,7 @@ use Restaurant\Entity\Table;
 use Restaurant\Entity\Reserve;
 use Restaurant\Collection\Reserves;
 use Restaurant\Entity\TimeInterval;
+use Restaurant\Exception\RestaurantException;
 
 class TableTest extends TestCase
 {
@@ -18,6 +19,17 @@ class TableTest extends TestCase
 
         $this->assertEquals($number, $table->number());
         $this->assertEquals($reserves, $table->reserves());
+    }
+
+
+    public function test_common_incorrectTableNumberValue()
+    {
+        $this->expectException(RestaurantException::class);
+
+        $number = -1;
+        $reserves = new Reserves();
+
+        $table = new Table($number, $reserves);
     }
 
     public function test_isReservedAt_freeAtTheTime()

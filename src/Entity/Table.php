@@ -3,6 +3,7 @@
 namespace Restaurant\Entity;
 
 use Restaurant\Collection\Reserves;
+use Restaurant\Exception\RestaurantException;
 
 class Table
 {
@@ -11,6 +12,10 @@ class Table
 
     public function __construct(int $number, Reserves $reserves)
     {
+        if ($number <= 0) {
+            throw new RestaurantException('Number of table must by unsigned');
+        }
+
         $this->number   = $number;
         $this->reserves = $reserves;
     }
