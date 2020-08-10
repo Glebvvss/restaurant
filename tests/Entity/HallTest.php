@@ -4,7 +4,7 @@ use PhpUnit\Framework\TestCase;
 
 use Restaurant\Entity\Hall;
 use Restaurant\Entity\HallName;
-use Restaurant\Collection\Tables;
+use Restaurant\Collection\Memory\Tables;
 
 class HallTest extends TestCase
 {

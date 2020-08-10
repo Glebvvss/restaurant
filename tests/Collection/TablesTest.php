@@ -3,8 +3,8 @@
 use Restaurant\Entity\Table;
 use Restaurant\Entity\Reserve;
 use PHPUnit\Framework\TestCase;
-use Restaurant\Collection\Tables;
-use Restaurant\Collection\Reserves;
+use Restaurant\Collection\Memory\Tables;
+use Restaurant\Collection\Memory\Reserves;
 use Restaurant\Exception\RestaurantException;
 
 class TablesTest extends TestCase

@@ -2,7 +2,7 @@
 
 namespace Restaurant\Entity;
 
-use Restaurant\Collection\Reserves;
+use Restaurant\Collection\Memory\Reserves;
 use Restaurant\Exception\RestaurantException;
 
 class Table

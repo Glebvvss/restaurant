@@ -1,6 +1,6 @@
 <?php
 
-namespace Restaurant\Collection;
+namespace Restaurant\Collection\Memory;
 
 use Restaurant\Entity\Reserve;
 use Restaurant\Entity\TimeInterval;

@@ -5,8 +5,8 @@ use PhpUnit\Framework\Testcase;
 use Restaurant\Restaurant;
 use Restaurant\Entity\Hall;
 use Restaurant\Entity\HallName;
-use Restaurant\Collection\Halls;
-use Restaurant\Collection\Tables;
+use Restaurant\Collection\Memory\Halls;
+use Restaurant\Collection\Memory\Tables;
 
 class RestaurantTest extends TestCase
 {

@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 use Restaurant\Entity\Reserve;
 use Restaurant\Entity\TimeInterval;
-use Restaurant\Collection\Reserves;
+use Restaurant\Collection\Memory\Reserves;
 use Restaurant\Exception\RestaurantException;
 
 class ReservesTest extends TestCase

@@ -3,8 +3,8 @@
 use Restaurant\Entity\Hall;
 use Restaurant\Entity\HallName;
 use PHPUnit\Framework\TestCase;
-use Restaurant\Collection\Halls;
-use Restaurant\Collection\Tables;
+use Restaurant\Collection\Memory\Halls;
+use Restaurant\Collection\Memory\Tables;
 use Restaurant\Exception\RestaurantException;
 
 class HallsTest extends TestCase

@@ -3,7 +3,7 @@
 namespace Restaurant\Entity;
 
 use InvalidAgrumentException;
-use Restaurant\Collection\Tables;
+use Restaurant\Collection\Memory\Tables;
 
 class Hall
 {

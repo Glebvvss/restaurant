@@ -4,7 +4,7 @@ namespace Restaurant;
 
 use Restaurant\Entity\Hall;
 use Restaurant\Entity\HallName;
-use Restaurant\Collection\Halls;
+use Restaurant\Collection\Memory\Halls;
 
 class Restaurant
 {

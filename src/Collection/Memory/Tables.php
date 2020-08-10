@@ -1,6 +1,6 @@
 <?php
 
-namespace Restaurant\Collection;
+namespace Restaurant\Collection\Memory;
 
 use Restaurant\Entity\Table;
 use Restaurant\Collection\Contract\ITables;
