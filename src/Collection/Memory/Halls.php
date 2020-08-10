@@ -10,7 +10,7 @@ use Restaurant\Collection\Contract\ICollection;
 
 class Halls implements IHalls, ICollection
 {
-    private $data = [];
+    private array $data = [];
 
     public function add(Hall $hall): void
     {
